@@ -12,7 +12,7 @@ public interface leaveService {
     leaveDTO submitLeaveRequest(Integer employeeId, Integer leaveTypeId, LocalDate startDate, LocalDate endDate);
 
     // Get leaves of an employee for a range of dates
-    List<leaveDTO> getLeavesByEmployeeAndDateRange(Integer employeeId, Date from, Date to);
+    List<leaveDTO> getLeavesByEmployeeAndDateRange(Integer employeeId, LocalDate from, LocalDate to);
 
     // Get leaves by type and by employee (paginated)
     Page<leaveDTO> getLeavesByTypeAndEmployee(Integer employeeId, Integer leaveTypeId, Pageable pageable);

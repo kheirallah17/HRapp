@@ -2,14 +2,14 @@ package HRapp.service;
 
 import HRapp.dtomap.leaveTypeDTO;
 import HRapp.dtomap.leaveTypeMapper;
-import HRapp.model.Leave;
 import HRapp.model.LeaveType;
 import HRapp.repository.leaveTypeRepo;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
+@Service
 public class leaveTypeServiceImpl implements leaveTypeService {
     private final leaveTypeRepo leaveTypeRepo;
     private final generalService generalService;

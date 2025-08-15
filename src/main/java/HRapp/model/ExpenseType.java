@@ -1,16 +1,14 @@
 package HRapp.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Data
-@NoArgsConstructor
+@Getter
+@Setter
 @Entity
-@Table(name = "leave_type")
-public class LeaveType {
+@Table(name = "expense_type")
+public class ExpenseType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)

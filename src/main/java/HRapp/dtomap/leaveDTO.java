@@ -13,4 +13,6 @@ public class leaveDTO {
     private Integer numberOfDays;
     private String note;
     private Integer leaveTypeId;
+    private Integer page = 0;
+    private Integer size = 10;
 }
